@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+
+.display-none {
+    display: none !important;
+}
+
+
+.container {
+    height: 100vh;
+    z-index: 33;
+}
+
+
+.happy-background {
+    background-image: url('images/back_ground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.story-background {
+    background-image: url('images/story_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.story-telling-background {
+    background-color: #000;
+}
+
+
+@keyframes backgroundFadeIn {
+    from {background-color: (0, 0, 0, 0);}
+    to {background-color: (0, 0, 0, 0.7);}
+}
+
+
+.main-content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+
+.story {
+    color: #fff;
+    align-self: center;
+    justify-self: center;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.8rem;
+    animation: story-sentence linear 3s;
+}
+
+
+@keyframes story-sentence {
+    from {
+        opacity: 0;
+        transform: 0 -30%;
+    }
+    to {
+        opacity: 1;
+        transform: 0 0;
+    }
+}
+
+
+.story-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+
+.blur-layout {
+    background-color: #000;
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    opacity: 0.5;
+    animation: backgroundFadeIn linear 1s;
+    z-index: 1;
+}
+
+
+.story-with-image {
+    margin-top: 35px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80%;
+    animation: story-sentence linear 3s;
+}
+
+
+.story-img-content {
+    color: #fff;
+    font-size: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.choice {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.supprise-img {
+    width: 30%;
+}
+
+
+.choice-title {
+    font-size: 1.8rem;
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+
+.u-img {
+    width: 200px;
+}
+
+
+.no-gift,
+.gift {
+    position: fixed;
+}
+
+
+.no-gift {
+    left:3%;
+    top: 3%;
+    cursor: pointer;
+}
+
+.gift {
+    right: 3%;
+    bottom: 4%;
+}
+
+
+.no-gift:hover {
+    border: 3px solid #fff;
+}
+
+
+.sentence {
+    background-color: #fff;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    width: 150px;
+    padding: 12px 25px;
+}

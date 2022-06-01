@@ -1,0 +1,59 @@
+
+sleep(2000)
+    .then(() => {
+        telling(0)
+        return sleep(sleepTime)
+    })
+    .then(() => {
+        telling(1)
+        return sleep(sleepTime)
+    })
+    .then(() => {
+        telling(2)
+        return sleep(sleepTime)
+    })
+    .then(() => {
+        telling(3)
+        return sleep(sleepTime)
+    })
+    .then(() => {
+        container.classList.remove('story-telling-background')
+        container.classList.add("story-background")
+        telling(4)
+        //blurLayout.classList.remove("display-none")
+        return sleep(sleepTime)
+    })
+    .then(() => {
+        telling(5)
+        return sleep(sleepTime)
+    })
+    .then(() => {
+        telling(6)
+        return sleep(sleepTime)
+    })
+    .then(() => {
+        telling(7)
+        return sleep(sleepTime)
+    })
+    .then(() => {
+        story.classList.add("display-none")
+        storyWithImg.classList.remove("display-none")
+        container.classList.remove("story-background")
+        container.classList.add("story-telling-background")
+        return sleep(sleepTime)
+    })
+    .then(() => {
+        telling(8)
+        story.classList.remove("display-none")
+        storyWithImg.classList.add("display-none")
+        return sleep(sleepTime)
+    })
+    .finally(() => {
+        //story.innerHTML = ""
+        //container.classList.remove('story-telling-background')
+        //container.classList.add("story-background") 
+        //blurLayout.classList.remove("display-none")
+    }
+    )
+
+
